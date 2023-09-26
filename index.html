@@ -1,4 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HCI ASSIGNMENT-02</title>
+</head>
+<style>
+    body {
+        background-image: url("background.jpg"); 
+        background-size: cover;
+        text-align: center;
+    }
+    h1 {
+        text-align: center;
+    }
+    table {
+            border-collapse: collapse;
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+
+        fieldset {
+            border: 2px solid #333;
+            padding: 10px;
+            width: 50%;
+            margin: 0 auto;
+        }
+</style>
+<body>
+    <h1>HCI ASSIGNMENT-02</h1>
+    <form method="post">
+        <fieldset>
+        <legend>Login Page</legend>
+        <fieldset>
+        <legend><h4>Name & Age</h4></legend>
+        <label for="firstname">Enter your first name: </label>
+        <input type="text" name="firstname"  required>
+        
+        <br>
+        
+        <label for="lastname">Enter your last name: </label>
+        <input type="text" name="lastname"  required>
+
+        <br>
+
+        <label for="birthdate">Date of Birth:</label>
+        
+        <br>
+        
+        <input type="date" id="birthdate" name="birthdate">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <label><input type="radio" id="Male" name="Gender" value="Male" checked>Male</label>
+            <label><input type="radio" id="Female" name="Gender" value="Female">Female</label>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+        <legend>Email & Password</legend>
+        <label for="email">email address: </label>
+        <input type="email" name="email"  required>
+
+        <br>
+
+        <label for="password">password: </label>
+        
+        <br>
+
+        <input type="password" name="password"  required>
+
+        <br>
+        </fieldset>
+        
+        <br>
+        
+        <input type="checkbox" name="stay" id="stay" value="stay">
+        <label for="stay">Stay signed in?</label>
+
+        <br>
+
+        <input type="submit" value="Login">
+
+        <br>
+
+        <input type="reset" value="Reset" />
+        </fieldset>
+    </form>
+    <fieldset>
+        <legend>Table with Fieldset</legend>
+        <table>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Date of Birth</th>
+                <th>Email Address</th>
+                <th>Home address</th>
+            </tr>
+            <tr>
+                <td><label>Enter parent's first name:</label><input type="text" id="First1_Table" name="First1_Table"></td>
+                <td><label>Enter parent's last name:</label><input type="text" id="Last1_Table" name="Last1_Table"></td>
+                <td><label>Enter parent's age:</label><input type="date" id="Dob1_Table" name="Dob1_Table"></td>
+                <td><label>Enter parent's email address:</label><input type="email" id="email1_Table" name="email1_Table"></td>
+                <td rowspan="2"><label>Enter parents' address:</label><input type="text" id="add_Table" name="add_Table"></td>
+            </tr>
+            <tr>
+                <td><label>Enter parent's first name:</label><input type="text" id="First2_Table" name="First2_Table"></td>
+                <td><label>Enter parent's last name:</label><input type="text" id="Last2_Table" name="Last2_Table"></td>
+                <td><label>Enter parent's age:</label><input type="date" id="Dob2_Table" name="Dob2_Table"></td>
+                <td><label>Enter parent's email address:</label><input type="email" id="email2_Table" name="email2_Table"></td>
+            </tr>
     
+        </table>
+    </fieldset>
+</body>
 </html>
